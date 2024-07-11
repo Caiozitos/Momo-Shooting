@@ -1,5 +1,0 @@
-draw_self()
-draw_set_font(fnt_mainFnt)
-draw_text(1030,y -20,"$" + string(global.rerollPrice))
-draw_set_color(c_black)
-draw_set_font(fnt_mainFnt)

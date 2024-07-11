@@ -1,5 +1,0 @@
-other.hp += round(other.hpMax * 0.30)
-instance_create_depth(x,y,depth,obj_smoke,{sprite_index: spr_shine, image_blend: c_red, image_xscale:1.5, image_yscale:1.5})
-audio_stop_sound(snd_foodEat)
-audio_play_sound(snd_foodEat,0,0)
-instance_destroy()
