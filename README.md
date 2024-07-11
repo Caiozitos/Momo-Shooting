@@ -1,4 +1,6 @@
 # Momo Shooting
+![imagem_2024-07-11_143146817](https://github.com/Caiozitos/Momo-Shooting/assets/174830907/924498fc-fc65-486b-961f-0657a8116cc7)
+
 ## English
 **Momo Shooting** is a game about Momo, a guy with a gun shooting aliens to protect his girlfriend. While he eliminates the extra-terrestrial creatures, his girlfriend Nene obtains more and more weapons and various equipment from alternative sources with the spoils of his enemies.
 
