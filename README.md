@@ -17,7 +17,7 @@ Whenever a new day starts, new equipment arrive, new enemies come, new guns are 
 Sempre que um novo dia começa, novos equipamentos chegam, novos inimigos surgem, novas armas são vendidas. *Cada novo jogo é um jogo realmente novo... Como qualquer outro jogo roguelike.*
 
 - **Plataformas:** Windows, Android(?)
-- **Gênero:** Roguelike, Shooter, 
+- **Gênero:** Roguelike, Shooter, Ação
 - **Versão:** Alpha v0.5
 - **Data de lançamento:** 2024
 
