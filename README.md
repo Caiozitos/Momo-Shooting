@@ -5,11 +5,8 @@
 Whenever a new day starts, new equipment arrive, new enemies come, new guns are sold. *Every new game is an actual new game... Like every other roguelike game.*
 
 **Platforms:** Windows, Android(?)
-
 **Genre:** Roguelike, Shooter, Action
-
 **Version:** Alpha v0.6
-
 **Release date:** 2024
 
 ## Português 
