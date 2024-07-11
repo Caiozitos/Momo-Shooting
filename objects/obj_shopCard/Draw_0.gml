@@ -1,0 +1,7 @@
+draw_self()
+draw_set_font(fnt_mainFnt)
+draw_set_halign(fa_center)
+draw_text(x,y+70,name)
+draw_set_font(fnt_mainFntSmall)
+draw_text(x,y+110,"$" + string(price))
+draw_set_halign(fa_left)
