@@ -1,12 +1,14 @@
 if state = "dash" or state = "rage"{
 //Tomando dano (pierce)
 if other.pierce = true{
+if ds_list_find_index(other.hitEnemies,id) = -1{
 hp -= other.damage
 i = 0
 	audio_stop_sound(snd_bulletHit)
 	audio_stop_sound(snd_alienHit)
 	audio_play_sound(snd_bulletHit,0,0,,,random_range(0.9,1.2))
 	audio_play_sound(snd_alienHit,0,0,,,random_range(0.9,1.2))
+}
 }
 	
 //Tomando dano (sempierce)
@@ -33,28 +35,30 @@ i = 0
 if other.pierce = false{
 instance_destroy(other)
 }
-
+//Colocando o inimigo na lista de inimigos atingidos
+else{
+	if ds_list_find_index(other.hitEnemies,id) = -1{
+		other.damage -= other.damage * other.pierceFactor
+		ds_list_add(other.hitEnemies,id)
+	}
+}
 //Tomando efeitos
 if other.poison = "badly"{
 	poisonDmg = global.statDamage * 0.90
+	if alarm[0] = -1{
 	alarm[0] = 30
+	}
 }
 else if other.poison = "normal"{
 	poisonDmg = other.damage * 0.80
+	if alarm[0] = -1{
 	alarm[0] = 30
+	}
 }
 
 if poisonDmg != 0{
 	hspd = hspd * 0.5
 	image_blend = c_lime
-}
-
-//Colocando o inimigo na lista de inimigos atingidos
-else{
-	if ds_list_find_index(other.hitEnemies,id) = -1{
-		other.damage -= other.damage * 0.40
-		ds_list_add(other.hitEnemies,id)
-	}
 }
 
 //Criando particula de tiro

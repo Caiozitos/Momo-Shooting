@@ -1,4 +1,5 @@
 hittenExplosion = false
+recoverSpd = 4
 son = instance_create_depth(x,y,depth + 1,obj_enemyColisor,{father:id})
 hspd = 4
 hp = 1500

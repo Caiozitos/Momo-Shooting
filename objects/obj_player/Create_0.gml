@@ -8,6 +8,8 @@ vspd = 7 //Velocidade vertical
 
 hpMax = 15 //Vida máxima
 hp = 15 //Vida
+global.statDamage = 9 //Dano
+global.pierceFactor = 0.25 //Debuff do piercing
 
 isInvencible = false //Invencibilidade
 

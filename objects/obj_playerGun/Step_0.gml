@@ -2,7 +2,7 @@ if global.currentGun = undefined{
 	global.currentGun = gunList[|0]
 }
 
-#region Valores de cada arma
+ #region Valores de cada arma
 var _gunDirection = point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y);
 var special = undefined;
 
@@ -11,7 +11,7 @@ switch (global.currentGun) {
         var _deadzone = 60;
         var _bulletDamage = global.statDamage * 1;
         var _gunSprite = spr_pistol;
-        var _rechargeTime = 5;
+        var _rechargeTime = 6;
         var _distancePlayer = 40;
         var _shakeX = irandom_range(103, 108);
         var _shakeY = irandom_range(97, 103);
@@ -21,6 +21,7 @@ switch (global.currentGun) {
         var _spdDebuff = 3;
         var _piercing = false;
         var _bulletSprite = spr_bullet;
+		var _pierceFactor = global.pierceFactor
         break;
     
     case "shotgun":
@@ -37,6 +38,7 @@ switch (global.currentGun) {
         var _spdDebuff = 5;
         var _piercing = false;
         var _bulletSprite = spr_bullet;
+		var _pierceFactor = global.pierceFactor
         special = function() {
             repeat(2){
                 instance_create_depth(x, y, -999, obj_bullet, {
@@ -63,6 +65,7 @@ switch (global.currentGun) {
         var _spdDebuff = 2;
         var _piercing = false;
         var _bulletSprite = spr_bullet;
+		var _pierceFactor = global.pierceFactor
         break;
 
     case "revolver":
@@ -79,6 +82,7 @@ switch (global.currentGun) {
         var _spdDebuff = 5;
         var _piercing = true;
         var _bulletSprite = spr_bullet;
+		var _pierceFactor = 0.40
         break;
 
     case "dart":
@@ -95,13 +99,14 @@ switch (global.currentGun) {
         var _spdDebuff = 2;
         var _piercing = false;
         var _bulletSprite = spr_dart;
+		var _pierceFactor = global.pierceFactor
         break;
 
     case "ak47":
         var _deadzone = 60;
-        var _bulletDamage = global.statDamage * 0.30;
+        var _bulletDamage = global.statDamage * 0.50;
         var _gunSprite = spr_ak47;
-        var _rechargeTime = 4;
+        var _rechargeTime = 5;
         var _distancePlayer = 60;
         var _shakeX = irandom_range(100, 105);
         var _shakeY = irandom_range(95, 100);
@@ -111,6 +116,7 @@ switch (global.currentGun) {
         var _spdDebuff = 3;
         var _piercing = false;
         var _bulletSprite = spr_bullet;
+		var _pierceFactor = global.pierceFactor
         break;
 
     case "flame":
@@ -127,11 +133,12 @@ switch (global.currentGun) {
         var _spdDebuff = 4;
         var _piercing = true;
         var _bulletSprite = spr_flame;
+		var _pierceFactor = global.pierceFactor
         break;
 
     case "minigun":
         var _deadzone = 60;
-        var _bulletDamage = global.statDamage * 0.40;
+        var _bulletDamage = global.statDamage * 0.30;
         var _gunSprite = spr_minigun;
         var _rechargeTime = 2;
         var _distancePlayer = 60;
@@ -143,6 +150,7 @@ switch (global.currentGun) {
         var _spdDebuff = 4;
         var _piercing = false;
         var _bulletSprite = spr_bullet;
+		var _pierceFactor = global.pierceFactor
         break;
 		
 	case "rocket":
@@ -159,6 +167,7 @@ switch (global.currentGun) {
        var _spdDebuff = 8;
        var _piercing = false;
        var _bulletSprite = spr_missile;
+	   var _pierceFactor = global.pierceFactor
        break;
 	
 }
@@ -220,7 +229,8 @@ if (_condition) {
         image_angle: image_angle,
         direction: _bulletDirection,
         pierce: _piercing,
-        sprite_index: _bulletSprite
+        sprite_index: _bulletSprite,
+		pierceFactor: _pierceFactor
     });
 
     global.score += 1;

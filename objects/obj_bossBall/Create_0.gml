@@ -1,4 +1,4 @@
-move_towards_point(obj_player.x,obj_player.y,5)
+move_towards_point(obj_player.x,obj_player.y,6)
 direction = point_direction(x,y,obj_player.x,obj_player.y)
 image_angle = direction
 alarm[0] = 120

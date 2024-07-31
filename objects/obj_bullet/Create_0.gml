@@ -4,6 +4,7 @@ if sprite_index != spr_flame{
 		speed = 40
 		image_xscale = 1.5
 		image_yscale = 1.5
+		pierceFactor = pierceFactor + global.pierceFactor
 	}
 	else{
 		speed = 15
@@ -24,7 +25,7 @@ else{
 hitEnemies = 0
 }
 
-if global.currentGun = "dart"{
+if sprite_index = spr_dart{
 poison = "badly"
 }
 else if global.poisonShot = true{
