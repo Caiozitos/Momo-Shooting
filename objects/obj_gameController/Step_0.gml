@@ -114,6 +114,18 @@ if (global.wavePaused) {
 	            instance_create_depth(_spawnX, _spawnY, depth, obj_enemyFly)
 	        };
             break;
+		case 10:
+	        waveTime = 60 * 60;
+	        callEnemy = function() {
+	            randomize();
+	            var _spawnX = choose(0, room_width, room_width / 2);
+	            var _spawnY = choose(0, room_height, room_height / 2);
+	            if (_spawnX == room_width / 2 && _spawnY == room_height / 2) {
+	                _spawnX = 0;
+	            }
+	            instance_create_depth(_spawnX, _spawnY, depth, obj_bossGrimCrawler)
+	        };
+            break;
     }
     }
 

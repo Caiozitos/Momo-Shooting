@@ -6,4 +6,4 @@ gunList = ds_list_create()
 gunIndex = 0
 
 //Debug
-ds_list_add(gunList,"dart")
+ds_list_add(gunList,"pistol")

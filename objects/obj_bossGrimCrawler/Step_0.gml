@@ -31,6 +31,20 @@ image_blend = make_color_rgb(255,i,i)
 #endregion
 
 #region State machine
+obj_gameController.bossSpawned = true
+if hp <= 1500 * 0.60{
+	if sprite_index != spr_grimCrawlerRage{
+		audio_play_sound(snd_bucketFall,5,0)
+		instance_create_depth(x+50,y+10,depth-2000,obj_smoke,{sprite_index:spr_fallingHelment})
+	}
+	hspd = 5
+	state = "rage"
+	move_towards_point(obj_player.x,obj_player.y,hspd)
+	sprite_index = spr_grimCrawlerRage
+	image_yscale = 1
+	image_angle = 1
+}
+else{
 if state = "follow"{
 sprite_index = spr_grimCrawlerCrawl
 direction = 0
@@ -60,5 +74,6 @@ image_angle = point_direction(x,y,obj_player.x,obj_player.y)
 else if state = "dash"{
 sprite_index = spr_grimCrawlerDash
 speed = 15
+}
 }
 #endregion

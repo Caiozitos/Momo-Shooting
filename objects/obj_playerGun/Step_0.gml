@@ -26,7 +26,7 @@ switch (global.currentGun) {
     
     case "shotgun":
         var _deadzone = 60;
-        var _bulletDamage = global.statDamage * 0.70;
+        var _bulletDamage = global.statDamage * 0.50;
         var _gunSprite = spr_shotgun;
         var _rechargeTime = 10;
         var _distancePlayer = 40;
@@ -43,7 +43,8 @@ switch (global.currentGun) {
             repeat(2){
                 instance_create_depth(x, y, -999, obj_bullet, {
                     pierce: false,
-                    damage: global.statDamage * 0.60,
+					pierceFactor: global.pierceFactor,
+                    damage: global.statDamage * 0.50,
                     image_angle: image_angle,
                     direction: point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y) + irandom_range(-20, 20)
                 });
