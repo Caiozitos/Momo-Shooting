@@ -23,6 +23,7 @@
     {"id":{"name":"spr_shotgun","path":"sprites/spr_shotgun/spr_shotgun.yy",},"order":2,},
     {"id":{"name":"obj_particleRun","path":"objects/obj_particleRun/obj_particleRun.yy",},"order":3,},
     {"id":{"name":"spr_minigunFiring","path":"sprites/spr_minigunFiring/spr_minigunFiring.yy",},"order":8,},
+    {"id":{"name":"snd_flyShoot","path":"sounds/snd_flyShoot/snd_flyShoot.yy",},"order":24,},
     {"id":{"name":"spr_enemyMosquito","path":"sprites/spr_enemyMosquito/spr_enemyMosquito.yy",},"order":9,},
     {"id":{"name":"snd_deathEnemy1","path":"sounds/snd_deathEnemy1/snd_deathEnemy1.yy",},"order":2,},
     {"id":{"name":"snd_shotgunShoot","path":"sounds/snd_shotgunShoot/snd_shotgunShoot.yy",},"order":5,},
