@@ -29,10 +29,18 @@ i = 0
 		var _choose = 1
 	}
 	if _choose = 1{
+	if sprite_index != spr_enemyMaggotKnight{
 	audio_stop_sound(snd_bulletHit)
 	audio_stop_sound(snd_alienHit)
 	audio_play_sound(snd_bulletHit,0,0,,,random_range(0.9,1.2))
 	audio_play_sound(snd_alienHit,0,0,,,random_range(0.9,1.2))
+	}
+	else{
+	audio_stop_sound(snd_bulletHit)
+	audio_stop_sound(snd_alienHit)
+	audio_play_sound(snd_bulletHit,0,0,,,random_range(0.9,1.2))
+	audio_play_sound(snd_alienHit,0,0,,,random_range(0.9,1.2))
+}
 	}
 	}
 }

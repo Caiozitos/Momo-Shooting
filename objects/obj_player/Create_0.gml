@@ -25,7 +25,12 @@ ds_list_add(global.shopItems,
 "uzi",
 "revolver",
 
-"hpUp",
+"banana",
+"apple",
+"mango",
+"burger",
+"completeMeal",
+"coffe",
 "dmgUp",
 
 )

@@ -8,8 +8,21 @@ if global.money >= father.price{
 	
 	else if father.type = "powerup"{
 		switch (father.item){
-			case "hpUp":
+			case "banana":
 			obj_player.hpMax += 3
+			break
+			
+			case "apple":
+			obj_player.hpMax += 3
+			break
+			
+			case "mango":
+			obj_player.hpMax += 3
+			break
+			
+			case "completeMeal":
+			obj_player.hpMax += 4
+			obj_player.hp = obj_player.hpMax
 			break
 			
 			case "dmgUp":

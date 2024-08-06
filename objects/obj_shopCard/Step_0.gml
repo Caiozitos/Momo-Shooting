@@ -69,12 +69,28 @@ switch (item){
 	name = "Bazooka"
 	break;
 	
-	case "hpUp":
-	sprite_index = spr_shopIcon
+	case "banana":
+	sprite_index = spr_fruitIcons
 	image_index = 0
 	type = "powerup"
 	price = 15
-	name = "Health Up"
+	name = "Banana"
+	break;
+	
+	case "mango":
+	sprite_index = spr_fruitIcons
+	image_index = 1
+	type = "powerup"
+	price = 15
+	name = "Mango"
+	break;
+	
+	case "apple":
+	sprite_index = spr_fruitIcons
+	image_index = 2
+	type = "powerup"
+	price = 15
+	name = "Apple"
 	break;
 	
 	case "dmgUp":

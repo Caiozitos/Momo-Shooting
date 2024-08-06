@@ -6,8 +6,12 @@ if global.wave <= 5{ds_list_add(global.shopItems,
 "uzi",
 "revolver",
 
-"hpUp",
-"dmgUp",
+"banana",
+"apple",
+"mango",
+"burger",
+"completeMeal",
+"coffe",
 
 )}
 else if global.wave > 5 && global.wave <= 10{ds_list_add(global.shopItems,
@@ -16,16 +20,24 @@ else if global.wave > 5 && global.wave <= 10{ds_list_add(global.shopItems,
 "revolver",
 "dart",
 
-"hpUp",
-"dmgUp",
+"banana",
+"apple",
+"mango",
+"burger",
+"completeMeal",
+"coffe",
 
 )}
 else if global.wave > 10 && global.wave <= 15{ds_list_add(global.shopItems,
 "ak47",
 "flame",
 
-"hpUp",
-"dmgUp",
+"banana",
+"apple",
+"mango",
+"burger",
+"completeMeal",
+"coffe",
 
 )}
 else if global.wave > 15{ds_list_add(global.shopItems,
@@ -33,8 +45,12 @@ else if global.wave > 15{ds_list_add(global.shopItems,
 "rocket",
 "minigun",
 
-"hpUp",
-"dmgUp",
+"banana",
+"apple",
+"mango",
+"burger",
+"completeMeal",
+"coffe",
 
 )}
 
