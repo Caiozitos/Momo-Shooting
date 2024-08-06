@@ -93,6 +93,30 @@ switch (item){
 	name = "Apple"
 	break;
 	
+	case "completeMeal":
+	sprite_index = spr_fruitIcons
+	image_index = 3
+	type = "powerup"
+	price = 25
+	name = "CompleteMeal"
+	break;
+	
+	case "burger":
+	sprite_index = spr_fruitIcons
+	image_index = 4
+	type = "powerup"
+	price = 30
+	name = "Burger"
+	break;
+	
+	case "coffe":
+	sprite_index = spr_fruitIcons
+	image_index = 5
+	type = "powerup"
+	price = 40
+	name = "Coffee"
+	break;
+	
 	case "dmgUp":
 	sprite_index = spr_shopIcon
 	image_index = 2

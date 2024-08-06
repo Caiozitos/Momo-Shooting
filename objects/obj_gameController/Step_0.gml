@@ -136,3 +136,5 @@ if global.wavePaused = false and alarm[1] = 0{
 	global.wave += 1
 	alarm[1] = waveTime
 }
+
+while !window_has_focus(){}

@@ -12,7 +12,7 @@
   "swfPrecision": 2.525,
   "bbox_left": 0,
   "bbox_right": 95,
-  "bbox_top": 3,
+  "bbox_top": 2,
   "bbox_bottom": 95,
   "HTile": false,
   "VTile": false,
@@ -33,6 +33,7 @@
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1d6eca46-f947-4640-8c2e-865dfc67ea3b",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ea3356ad-3856-4277-a5f2-08db54137bc1",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cd842115-e99c-44f4-ba14-e7c7611f87cc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1edb9437-8225-4e87-b009-733ad19186c7",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -44,7 +45,7 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 5.0,
+    "length": 6.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
@@ -54,6 +55,7 @@
             {"id":"f4cc655a-feb3-4e73-a229-2ed6958d7b21","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1d6eca46-f947-4640-8c2e-865dfc67ea3b","path":"sprites/spr_fruitIcons/spr_fruitIcons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"bf15a7e4-fa9b-4c1b-af32-544f0cc6e5a9","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ea3356ad-3856-4277-a5f2-08db54137bc1","path":"sprites/spr_fruitIcons/spr_fruitIcons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"b435f822-c62b-4524-bda2-e251a9005c39","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cd842115-e99c-44f4-ba14-e7c7611f87cc","path":"sprites/spr_fruitIcons/spr_fruitIcons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a07278f1-e72a-4dc5-af7b-c16e2cf5a815","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1edb9437-8225-4e87-b009-733ad19186c7","path":"sprites/spr_fruitIcons/spr_fruitIcons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,

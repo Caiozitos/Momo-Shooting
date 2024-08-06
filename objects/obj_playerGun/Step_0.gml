@@ -175,6 +175,7 @@ switch (global.currentGun) {
 #endregion
 
 #region Comportamento
+var 
 if (point_distance(mouse_x, mouse_y, obj_player.x, obj_player.y) > _deadzone) {
     x = obj_player.x + lengthdir_x(_distancePlayer, _gunDirection);
     y = obj_player.y + lengthdir_y(_distancePlayer, _gunDirection);
@@ -204,6 +205,7 @@ if (_condition) {
 	
     obj_player.hspd -= _spdDebuff;
     obj_player.vspd -= _spdDebuff;
+	actualSpeed = obj_player.hspd + _spdDebuff
 
     if (!(_sound == snd_uziShoot || _sound == snd_flameShoot || _sound == snd_minigunShoot)) {
         audio_stop_sound(_sound);
@@ -239,8 +241,8 @@ if (_condition) {
         special();
     }
 } else {
-    obj_player.hspd = 7;
-    obj_player.vspd = 7;
+    obj_player.hspd = actualSpeed;
+    obj_player.vspd = actualSpeed;
     
     if (global.currentGun == "minigun") {
         sprite_index = spr_minigun;
