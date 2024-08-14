@@ -9,7 +9,8 @@ hp = 15 //Vida
 global.statDamage = 5//Dano
 global.pierceFactor = 0.25 //Debuff do piercing
 global.shotRateBonus = 1 //Bonus de veloc. de tiro
-
+global.inventory = ds_list_create() //Items possuídos
+global.inventoryIcons = ds_list_create() //Items possuídos (image_index)
 hspd = 7 //Velocidade horizontal
 vspd = 7 //Velocidade vertical
 

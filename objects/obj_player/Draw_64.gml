@@ -29,9 +29,10 @@ draw_text(135,70,global.money)
 
 //Desenhando os status
 if global.showStats = true{
-	draw_text(1000,500,"Damage:" + string(global.statDamage))
-	draw_text(1000,530,"Speed:" + string(obj_player.hspd))
-	draw_text(1000,560,"ShotRateBonus:" + string(global.shotRateBonus))
+	var _xStart = 900
+	draw_text(_xStart,600,"Damage:" + string(global.statDamage))
+	draw_text(_xStart,630,"Speed:" + string(obj_player.hspd))
+	draw_text(_xStart,660,"ShotRateBonus:" + string(global.shotRateBonus))
 }
 
 //Desenhando o coração
@@ -48,5 +49,22 @@ else if hp < hpMax*0.25{
 	var _sprite = spr_heart25
 }
 draw_sprite(_sprite,-1,45,45)
+
+// Espaçamento e posição inicial dos itens
+var item_spacing = 50; // Espaçamento entre os itens
+var items_per_row = 4; // Número de itens por linha
+var start_x = 30; // Posição x inicial
+var start_y = 150; // Posição y inicial
+
+// Desenhando os itens
+for (var i = 0; i < ds_list_size(global.inventory); i += 1) {
+    // Calcular a posição x e y
+    var x_position = start_x + (i mod items_per_row) * item_spacing;
+    var y_position = start_y + (i div items_per_row) * item_spacing;
+
+    // Desenhar o sprite do item
+    draw_sprite_ext(ds_list_find_value(global.inventory, i), ds_list_find_value(global.inventoryIcons, i),
+        x_position, y_position, 0.5, 0.5, 0, c_white, 0.50);
 }
 
+}

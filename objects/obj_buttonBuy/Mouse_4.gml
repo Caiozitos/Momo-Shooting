@@ -41,6 +41,8 @@ if global.money >= father.price{
 			global.statDamage += 1.5
 			break
 		}
+		ds_list_add(global.inventory,father.sprite_index)
+		ds_list_add(global.inventoryIcons,father.image_index)
 		audio_play_sound(snd_chaChing,1,0)
 		global.money -= father.price
 		instance_destroy()
