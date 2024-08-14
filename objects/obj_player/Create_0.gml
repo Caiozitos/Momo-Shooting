@@ -2,7 +2,7 @@
 escCloseGame = 0 //Timer de fechar o jogo
 inputX = 0 //Se A ou D está sendo pressionado
 inputY = 0 //Se W ou S está sendo pressionado
-global.showStats = true //Se está mostrando os status
+global.showStats = false //Se está mostrando os status
 
 hpMax = 15 //Vida máxima
 hp = 15 //Vida
@@ -16,7 +16,7 @@ vspd = 7 //Velocidade vertical
 
 isInvencible = false //Invencibilidade
 
-global.money = 999 //Dinheiro
+global.money = 0 //Dinheiro
 global.score = 0
 
 alarm[0] = 1 //Iniciando as pegadas

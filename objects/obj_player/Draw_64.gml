@@ -51,10 +51,10 @@ else if hp < hpMax*0.25{
 draw_sprite(_sprite,-1,45,45)
 
 // Espaçamento e posição inicial dos itens
-var item_spacing = 50; // Espaçamento entre os itens
+var item_spacing = 55; // Espaçamento entre os itens
 var items_per_row = 4; // Número de itens por linha
 var start_x = 30; // Posição x inicial
-var start_y = 150; // Posição y inicial
+var start_y = 200; // Posição y inicial
 
 // Desenhando os itens
 for (var i = 0; i < ds_list_size(global.inventory); i += 1) {
