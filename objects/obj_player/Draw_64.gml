@@ -27,6 +27,12 @@ draw_text(1150, 10, _str );
 draw_set_font(fnt_mainFnt)
 draw_text(135,70,global.money)
 
+//Desenhando os status
+if global.showStats = true{
+	draw_text(1000,500,"Damage:" + string(global.statDamage))
+	draw_text(1000,530,"Speed:" + string(obj_player.hspd))
+	draw_text(1000,560,"ShotRateBonus:" + string(global.shotRateBonus))
+}
 
 //Desenhando o coração
 if hp >= hpMax*0.75{
@@ -43,3 +49,4 @@ else if hp < hpMax*0.25{
 }
 draw_sprite(_sprite,-1,45,45)
 }
+

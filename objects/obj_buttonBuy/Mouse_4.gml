@@ -27,13 +27,13 @@ if global.money >= father.price{
 			
 			case "burger":
 			obj_player.hpMax += 6
-			obj_player.hspd -= obj_player.hspd * 0.3
-			obj_player.vspd -= obj_player.vspd * 0.3
+			obj_player.hspd -= obj_player.hspd * 0.10
+			obj_player.vspd -= obj_player.vspd * 0.10
 			break
 			
 			case "coffe":
-			obj_player.hspd += obj_player.hspd * 0.3
-			obj_player.vspd += obj_player.vspd * 0.3
+			obj_player.hspd += obj_player.hspd * 0.10
+			obj_player.vspd += obj_player.vspd * 0.10
 			global.shotRateBonus += 0.15
 			break
 			

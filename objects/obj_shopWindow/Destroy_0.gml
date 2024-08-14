@@ -2,9 +2,11 @@ ds_list_destroy(global.shopItems)
 global.shopItems = ds_list_create()
 
 if global.wave <= 5{ds_list_add(global.shopItems,
+"pistol",
 "shotgun",
 "uzi",
 "revolver",
+"dart",
 
 "banana",
 "apple",
@@ -16,6 +18,7 @@ if global.wave <= 5{ds_list_add(global.shopItems,
 
 )}
 else if global.wave > 5 && global.wave <= 10{ds_list_add(global.shopItems,
+"pistol",
 "shotgun",
 "uzi",
 "revolver",
@@ -33,6 +36,8 @@ else if global.wave > 5 && global.wave <= 10{ds_list_add(global.shopItems,
 else if global.wave > 10 && global.wave <= 15{ds_list_add(global.shopItems,
 "ak47",
 "flame",
+"shotgun",
+"revolver",
 
 "banana",
 "apple",
@@ -45,6 +50,7 @@ else if global.wave > 10 && global.wave <= 15{ds_list_add(global.shopItems,
 )}
 else if global.wave > 15{ds_list_add(global.shopItems,
 "ak47",
+"flame",
 "rocket",
 "minigun",
 

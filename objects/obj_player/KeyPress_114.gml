@@ -1,0 +1,1 @@
+global.showStats = !global.showStats

@@ -20,6 +20,13 @@ switch (item){
 	name = "Shotgun"
 	break;
 	
+	case "pistol":
+	sprite_index = spr_pistol
+	type = "gun"
+	price = 20
+	name = "Pistol"
+	break;
+	
 	case "uzi":
 	sprite_index = spr_uzi
 	type = "gun"
@@ -97,7 +104,7 @@ switch (item){
 	sprite_index = spr_fruitIcons
 	image_index = 3
 	type = "powerup"
-	price = 25
+	price = 45
 	name = "CompleteMeal"
 	break;
 	

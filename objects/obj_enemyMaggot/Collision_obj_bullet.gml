@@ -1,3 +1,4 @@
+randomize()
 if other.pierce = true{
 if ds_list_find_index(other.hitEnemies,id) = -1{
 hp -= other.damage
@@ -10,9 +11,9 @@ i = 0
 }
 else{
 	audio_stop_sound(snd_bulletHit)
-	audio_stop_sound(snd_alienHit)
+	audio_stop_sound(snd_metalHurt)
 	audio_play_sound(snd_bulletHit,0,0,,,random_range(0.9,1.2))
-	audio_play_sound(snd_alienHit,0,0,,,random_range(0.9,1.2))
+	audio_play_sound(snd_metalHurt,0,0,,,random_range(0.9,1.2))
 }
 }
 }
@@ -34,12 +35,12 @@ i = 0
 	audio_stop_sound(snd_alienHit)
 	audio_play_sound(snd_bulletHit,0,0,,,random_range(0.9,1.2))
 	audio_play_sound(snd_alienHit,0,0,,,random_range(0.9,1.2))
-	}
-	else{
+}
+else{
 	audio_stop_sound(snd_bulletHit)
-	audio_stop_sound(snd_alienHit)
+	audio_stop_sound(snd_metalHurt)
 	audio_play_sound(snd_bulletHit,0,0,,,random_range(0.9,1.2))
-	audio_play_sound(snd_alienHit,0,0,,,random_range(0.9,1.2))
+	audio_play_sound(snd_metalHurt,0,0,,,random_range(0.9,1.2))
 }
 	}
 	}

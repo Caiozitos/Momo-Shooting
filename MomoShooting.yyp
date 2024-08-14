@@ -85,6 +85,7 @@
     {"id":{"name":"spr_enemyMaggot","path":"sprites/spr_enemyMaggot/spr_enemyMaggot.yy",},"order":0,},
     {"id":{"name":"spr_bulletBreak","path":"sprites/spr_bulletBreak/spr_bulletBreak.yy",},"order":9,},
     {"id":{"name":"spr_enemyClosedPodFall","path":"sprites/spr_enemyClosedPodFall/spr_enemyClosedPodFall.yy",},"order":3,},
+    {"id":{"name":"obj_game","path":"objects/obj_game/obj_game.yy",},"order":5,},
     {"id":{"name":"spr_grimCrawlerCharge","path":"sprites/spr_grimCrawlerCharge/spr_grimCrawlerCharge.yy",},"order":2,},
     {"id":{"name":"obj_enemyFly","path":"objects/obj_enemyFly/obj_enemyFly.yy",},"order":3,},
     {"id":{"name":"snd_swish","path":"sounds/snd_swish/snd_swish.yy",},"order":27,},

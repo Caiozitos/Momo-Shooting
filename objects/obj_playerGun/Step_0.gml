@@ -11,7 +11,7 @@ switch (global.currentGun) {
         var _deadzone = 60;
         var _bulletDamage = global.statDamage * 1;
         var _gunSprite = spr_pistol;
-        var _rechargeTime = 6;
+        var _rechargeTime = 8;
         var _distancePlayer = 40;
         var _shakeX = irandom_range(103, 108);
         var _shakeY = irandom_range(97, 103);
@@ -26,9 +26,9 @@ switch (global.currentGun) {
     
     case "shotgun":
         var _deadzone = 60;
-        var _bulletDamage = global.statDamage * 0.50;
+        var _bulletDamage = global.statDamage * 0.40;
         var _gunSprite = spr_shotgun;
-        var _rechargeTime = 10;
+        var _rechargeTime = 14;
         var _distancePlayer = 40;
         var _shakeX = irandom_range(105, 110);
         var _shakeY = irandom_range(95, 105);
@@ -44,7 +44,7 @@ switch (global.currentGun) {
                 instance_create_depth(x, y, -999, obj_bullet, {
                     pierce: false,
 					pierceFactor: global.pierceFactor,
-                    damage: global.statDamage * 0.50,
+                    damage: global.statDamage * 0.40,
                     image_angle: image_angle,
                     direction: point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y) + irandom_range(-20, 20)
                 });
@@ -56,7 +56,7 @@ switch (global.currentGun) {
         var _deadzone = 60;
         var _bulletDamage = global.statDamage * 0.20;
         var _gunSprite = spr_uzi;
-        var _rechargeTime = 2;
+        var _rechargeTime = 4;
         var _distancePlayer = 40;
         var _shakeX = irandom_range(100, 105);
         var _shakeY = irandom_range(95, 100);
@@ -73,7 +73,7 @@ switch (global.currentGun) {
         var _deadzone = 60;
         var _bulletDamage = global.statDamage * 1;
         var _gunSprite = spr_revolver;
-        var _rechargeTime = 10;
+        var _rechargeTime = 13;
         var _distancePlayer = 40;
         var _shakeX = irandom_range(103, 108);
         var _shakeY = irandom_range(97, 103);
@@ -90,7 +90,7 @@ switch (global.currentGun) {
         var _deadzone = 60;
         var _bulletDamage = global.statDamage * 0.80;
         var _gunSprite = spr_dartGun;
-        var _rechargeTime = 5;
+        var _rechargeTime = 8;
         var _distancePlayer = 30;
         var _shakeX = irandom_range(100, 100);
         var _shakeY = irandom_range(100, 100);
@@ -107,7 +107,7 @@ switch (global.currentGun) {
         var _deadzone = 60;
         var _bulletDamage = global.statDamage * 0.50;
         var _gunSprite = spr_ak47;
-        var _rechargeTime = 5;
+        var _rechargeTime = 7;
         var _distancePlayer = 60;
         var _shakeX = irandom_range(100, 105);
         var _shakeY = irandom_range(95, 100);
@@ -124,7 +124,7 @@ switch (global.currentGun) {
         var _deadzone = 60;
         var _bulletDamage = global.statDamage * 0.10;
         var _gunSprite = spr_flamethrower;
-        var _rechargeTime = 5;
+        var _rechargeTime = 7;
         var _distancePlayer = 60;
         var _shakeX = irandom_range(100, 100);
         var _shakeY = irandom_range(100, 100);
@@ -139,9 +139,9 @@ switch (global.currentGun) {
 
     case "minigun":
         var _deadzone = 60;
-        var _bulletDamage = global.statDamage * 0.30;
+        var _bulletDamage = global.statDamage * 0.17;
         var _gunSprite = spr_minigun;
-        var _rechargeTime = 2;
+        var _rechargeTime = 3;
         var _distancePlayer = 60;
         var _shakeX = irandom_range(100, 100);
         var _shakeY = irandom_range(98, 100);
@@ -202,10 +202,6 @@ if (_condition) {
 	if global.currentGun = "rocket"{
 		image_blend = c_red
 	}
-	
-    obj_player.hspd -= _spdDebuff;
-    obj_player.vspd -= _spdDebuff;
-	actualSpeed = obj_player.hspd + _spdDebuff
 
     if (!(_sound == snd_uziShoot || _sound == snd_flameShoot || _sound == snd_minigunShoot)) {
         audio_stop_sound(_sound);
@@ -241,8 +237,6 @@ if (_condition) {
         special();
     }
 } else {
-    obj_player.hspd = actualSpeed;
-    obj_player.vspd = actualSpeed;
     
     if (global.currentGun == "minigun") {
         sprite_index = spr_minigun;

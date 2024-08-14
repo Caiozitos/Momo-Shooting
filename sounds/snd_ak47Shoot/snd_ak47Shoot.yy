@@ -4,7 +4,7 @@
   "name": "snd_ak47Shoot",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.01,
+  "volume": 0.03,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
