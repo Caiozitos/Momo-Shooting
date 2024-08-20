@@ -42,4 +42,6 @@ if image_xscale > 0.5{
 	}
 }
 
+scr_freeze(5)
+
 

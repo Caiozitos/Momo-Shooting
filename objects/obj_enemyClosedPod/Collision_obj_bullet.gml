@@ -1,5 +1,6 @@
 if other.pierce = true{
 if ds_list_find_index(other.hitEnemies,id) = -1{
+scr_damageFeedback(other.damage)
 hp -= other.damage
 i = 0
 	audio_stop_sound(snd_bulletHit)
@@ -11,6 +12,7 @@ i = 0
 	
 //Tomando dano (sempierce)
 else{
+scr_damageFeedback(other.damage)
 hp -= other.damage
 i = 0
 	if global.currentGun != spr_flamethrower{

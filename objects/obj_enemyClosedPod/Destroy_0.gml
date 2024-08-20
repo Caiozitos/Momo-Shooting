@@ -23,3 +23,5 @@ if image_xscale > 0.5{
 		instance_create_depth(x,y,depth,obj_heal,{image_index: choose(0,1,2,3,4)})
 	}
 }
+
+scr_freeze(5)
