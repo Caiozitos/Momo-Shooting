@@ -3,7 +3,7 @@ hspd = 0
 
 //Tomando dano (pierce)
 if other.pierce = true{
-scr_damageFeedback(other.damage)
+scr_damageFeedback(other.damage,c_red)
 hp -= other.damage
 i = 0
 	audio_stop_sound(snd_bulletHit)
@@ -14,7 +14,7 @@ i = 0
 	
 //Tomando dano (sempierce)
 else{
-scr_damageFeedback(other.damage)
+scr_damageFeedback(other.damage,c_red)
 hp -= other.damage
 i = 0
 	if global.currentGun != spr_flamethrower{

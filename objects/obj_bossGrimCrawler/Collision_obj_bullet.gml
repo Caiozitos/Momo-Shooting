@@ -3,6 +3,7 @@ if state = "dash" or state = "rage"{
 if other.pierce = true{
 if ds_list_find_index(other.hitEnemies,id) = -1{
 hp -= other.damage
+scr_damageFeedback(other.damage)
 i = 0
 	audio_stop_sound(snd_bulletHit)
 	audio_stop_sound(snd_alienHit)
@@ -14,6 +15,7 @@ i = 0
 //Tomando dano (sempierce)
 else{
 hp -= other.damage
+scr_damageFeedback(other.damage)
 i = 0
 	if global.currentGun != spr_flamethrower{
 	if global.currentGun = "ak47" or global.currentGun ="uzi" or global.currentGun ="minigun"{

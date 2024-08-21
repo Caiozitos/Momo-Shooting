@@ -1,3 +1,4 @@
+audio_group_load(audiogroup_priority)
 #region Definindo variáveis
 escCloseGame = 0 //Timer de fechar o jogo
 inputX = 0 //Se A ou D está sendo pressionado

@@ -37,9 +37,18 @@ if global.money >= father.price{
 			global.shotRateBonus += 0.15
 			break
 			
+			case "crochetGlooves":
+			instance_create_depth(obj_player.x,obj_player.y,depth,obj_orbitalGloove)
+			break;
+			
+			case "skate":
+			obj_player.hspd += obj_player.hspd * 0.05
+			obj_player.vspd += obj_player.vspd * 0.05
+			break;
+			
 			case "dmgUp":
 			global.statDamage += 1.5
-			break
+			break;
 		}
 		ds_list_add(global.inventory,father.sprite_index)
 		ds_list_add(global.inventoryIcons,father.image_index)

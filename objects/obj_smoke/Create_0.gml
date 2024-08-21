@@ -1,0 +1,1 @@
+if sprite_index = spr_spit1{image_index = c_red}

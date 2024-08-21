@@ -1,0 +1,1 @@
+global.soundtrack = ost_reload

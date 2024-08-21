@@ -124,6 +124,22 @@ switch (item){
 	name = "Coffee"
 	break;
 	
+	case "crochetGlooves":
+	sprite_index = spr_shopItems
+	image_index = 1
+	type = "powerup"
+	price = 40
+	name = "CrochetGlooves"
+	break;
+	
+	case "skate":
+	sprite_index = spr_shopItems
+	image_index = 0
+	type = "powerup"
+	price = 20
+	name = "Skate"
+	break;
+	
 	case "dmgUp":
 	sprite_index = spr_shopIcon
 	image_index = 2

@@ -1,1 +1,2 @@
-cursor_sprite = spr_crosshair
+global.soundtrack = ost_jaywalking
+obj_transicao.action = "fadeOut"
