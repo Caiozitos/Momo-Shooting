@@ -44,6 +44,13 @@ if global.money >= father.price{
 			case "skate":
 			obj_player.hspd += obj_player.hspd * 0.05
 			obj_player.vspd += obj_player.vspd * 0.05
+			global.bulletSpray += 3
+			break;
+			
+			case "monocle":
+			global.statDamage -= global.statDamage * 0.35
+			global.shotRateBonus -= 0.10
+			global.bulletSpray = -9999999
 			break;
 			
 			case "dmgUp":

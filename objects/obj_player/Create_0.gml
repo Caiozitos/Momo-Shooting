@@ -7,6 +7,7 @@ global.showStats = false //Se está mostrando os status
 
 hpMax = 15 //Vida máxima
 hp = 15 //Vida
+global.bulletSpray = 0 //Bonus de desvio das balas
 global.statDamage = 5//Dano
 global.pierceFactor = 0.25 //Debuff do piercing
 global.shotRateBonus = 1 //Bonus de veloc. de tiro
@@ -25,18 +26,20 @@ alarm[0] = 1 //Iniciando as pegadas
 
 global.shopItems = ds_list_create()
 ds_list_add(global.shopItems,
+"pistol",
 "shotgun",
 "uzi",
 "revolver",
 
+"dmgUp",
 "banana",
 "apple",
 "mango",
 "burger",
 "completeMeal",
 "coffe",
-"dmgUp",
-
+"crochetGlooves",
+"skate",
 )
 
 global.poisonShot = false

@@ -4,7 +4,7 @@ if global.wavePaused = false and bossSpawned = false{
 		callEnemy()
 	}
 	else{
-	repeat(round(global.wave / 2) + 1){
+	repeat(round(global.wave / 4) + 1){
 	callEnemy()
 	}
 	}

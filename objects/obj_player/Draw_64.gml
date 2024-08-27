@@ -32,7 +32,8 @@ if global.showStats = true{
 	var _xStart = 900
 	draw_text(_xStart,600,"Damage:" + string(global.statDamage))
 	draw_text(_xStart,630,"Speed:" + string(obj_player.hspd))
-	draw_text(_xStart,660,"ShotRateBonus:" + string(global.shotRateBonus))
+	draw_text(_xStart,660,"ShotRateMult:" + string(global.shotRateBonus))
+	draw_text(_xStart,690,"RecoilBonus:" + string(global.bulletSpray))
 }
 
 //Desenhando o coração
@@ -63,8 +64,7 @@ for (var i = 0; i < ds_list_size(global.inventory); i += 1) {
     var y_position = start_y + (i div items_per_row) * item_spacing;
 
     // Desenhar o sprite do item
-    draw_sprite_ext(ds_list_find_value(global.inventory, i), ds_list_find_value(global.inventoryIcons, i),
-        x_position, y_position, 0.5, 0.5, 0, c_white, 0.50);
+    draw_sprite_ext(ds_list_find_value(global.inventory, i), ds_list_find_value(global.inventoryIcons, i),x_position, y_position, 0.5, 0.5, 0, c_white, 0.50);
 }
 
 }

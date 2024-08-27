@@ -1,7 +1,7 @@
 randomize()
 if other.pierce = true{
 if ds_list_find_index(other.hitEnemies,id) = -1{
-scr_damageFeedback(other.damage)
+scr_damageFeedback(other.damage,c_red)
 hp -= other.damage
 i = 0
 	if sprite_index != spr_enemyMaggotKnight{
@@ -22,7 +22,7 @@ else{
 //Tomando dano (sempierce)
 else{
 hp -= other.damage
-scr_damageFeedback(other.damage)
+scr_damageFeedback(other.damage,c_red)
 i = 0
 	if global.currentGun != spr_flamethrower{
 	if global.currentGun = "ak47" or global.currentGun ="uzi" or global.currentGun ="minigun"{

@@ -25,6 +25,9 @@ if global.wave <= 5{ds_list_add(global.shopItems,
 "coffe",
 "crochetGlooves",
 "skate",
+"monocle",
+"sophiesHat",
+"pillow",
 )}
 else if global.wave > 5 && global.wave <= 10{ds_list_add(global.shopItems,
 "pistol",
@@ -42,6 +45,9 @@ else if global.wave > 5 && global.wave <= 10{ds_list_add(global.shopItems,
 "coffe",
 "crochetGlooves",
 "skate",
+"monocle",
+"sophiesHat",
+"pillow",
 )}
 else if global.wave > 10 && global.wave <= 15{ds_list_add(global.shopItems,
 "ak47",
@@ -58,6 +64,9 @@ else if global.wave > 10 && global.wave <= 15{ds_list_add(global.shopItems,
 "coffe",
 "crochetGlooves",
 "skate",
+"monocle",
+"sophiesHat",
+"pillow",
 
 )}
 else if global.wave > 15{ds_list_add(global.shopItems,
@@ -75,7 +84,9 @@ else if global.wave > 15{ds_list_add(global.shopItems,
 "coffe",
 "crochetGlooves",
 "skate",
-
+"monocle",
+"sophiesHat",
+"pillow",
 )}
 randomize()
 ds_list_shuffle(global.shopItems)
