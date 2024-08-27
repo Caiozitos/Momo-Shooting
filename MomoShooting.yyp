@@ -45,6 +45,7 @@
     {"id":{"name":"snd_playerHit","path":"sounds/snd_playerHit/snd_playerHit.yy",},"order":3,},
     {"id":{"name":"spr_dartGun","path":"sprites/spr_dartGun/spr_dartGun.yy",},"order":5,},
     {"id":{"name":"obj_colisor","path":"objects/obj_colisor/obj_colisor.yy",},"order":0,},
+    {"id":{"name":"spr_statusEffects","path":"sprites/spr_statusEffects/spr_statusEffects.yy",},"order":15,},
     {"id":{"name":"spr_bossBar","path":"sprites/spr_bossBar/spr_bossBar.yy",},"order":4,},
     {"id":{"name":"spr_hud","path":"sprites/spr_hud/spr_hud.yy",},"order":1,},
     {"id":{"name":"obj_buttonBuy","path":"objects/obj_buttonBuy/obj_buttonBuy.yy",},"order":0,},
