@@ -53,6 +53,9 @@ if global.money >= father.price{
 			global.bulletSpray = -9999999
 			break;
 			
+			case "pillow":
+			instance_create_depth(obj_player.x,obj_player.y,-999,obj_orbitalPillow)
+			
 			case "dmgUp":
 			global.statDamage += 1.5
 			break;
