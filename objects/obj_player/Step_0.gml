@@ -84,3 +84,11 @@ if hp > hpMax{
 	hp = hpMax
 }
 #endregion
+
+#region Morrendo
+if hp <= 0{
+	global.xTp = x
+	global.yTp = y
+	room_goto(rm_gameOver)
+}
+#endregion

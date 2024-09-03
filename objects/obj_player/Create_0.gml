@@ -1,5 +1,5 @@
 audio_group_load(audiogroup_priority)
-#region Definindo variáveis
+#region Definindo variáveis 
 escCloseGame = 0 //Timer de fechar o jogo
 inputX = 0 //Se A ou D está sendo pressionado
 inputY = 0 //Se W ou S está sendo pressionado
@@ -18,12 +18,12 @@ vspd = 7 //Velocidade vertical
 
 isInvencible = false //Invencibilidade
 
-global.money = 0 //Dinheiro
+global.money = 999//Dinheiro
 global.score = 0
 
 alarm[0] = 1 //Iniciando as pegadas
 
-
+global.cosmetics = ds_list_create()
 global.shopItems = ds_list_create()
 ds_list_add(global.shopItems,
 "pistol",
@@ -40,12 +40,16 @@ ds_list_add(global.shopItems,
 "coffe",
 "crochetGlooves",
 "skate",
+"monocle",
+"sophiesHat",
+"pillow"
 )
 
 global.poisonShot = false
 #endregion
 
 #region Criando objetos
+instance_create_depth(x,y,depth,obj_obtainedItems)
 instance_create_depth(x,y,depth,obj_particleRun) //Partículas ao andar
 
 #endregion

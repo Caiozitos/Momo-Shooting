@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Icons",
-    "path": "folders/Sprites/Icons.yy",
+    "name": "Powerups",
+    "path": "folders/Sprites/Powerups.yy",
   },
 }
