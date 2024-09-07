@@ -18,10 +18,12 @@ vspd = 7 //Velocidade vertical
 
 isInvencible = false //Invencibilidade
 
-global.money = 999//Dinheiro
+global.money = 0 //Dinheiro
 global.score = 0
+global.playtime = current_hour * 60 + current_minute
 
 alarm[0] = 1 //Iniciando as pegadas
+alarm[4] = 3 //Iniciando a smoke
 
 global.cosmetics = ds_list_create()
 global.shopItems = ds_list_create()
@@ -50,6 +52,5 @@ global.poisonShot = false
 
 #region Criando objetos
 instance_create_depth(x,y,depth,obj_obtainedItems)
-instance_create_depth(x,y,depth,obj_particleRun) //Partículas ao andar
 
 #endregion

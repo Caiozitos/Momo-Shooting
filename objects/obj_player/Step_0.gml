@@ -70,6 +70,9 @@ else{
 #endregion
 
 #region Corrigindo bugs
+if global.score < 0{
+	global.score = 0
+}
 if instance_exists(obj_shopWindow){
 	inputX = 0
 	inputY = 0

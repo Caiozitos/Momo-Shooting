@@ -19,6 +19,7 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"lay_cursor","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4CF4F3C8","properties":[],"isDnd":false,"objectId":{"name":"obj_cursor","path":"objects/obj_cursor/obj_cursor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":544.0,"y":942.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1A3D6F44","properties":[],"isDnd":false,"objectId":{"name":"obj_transicao","path":"objects/obj_transicao/obj_transicao.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":745.0,"y":460.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4F5579DC","properties":[],"isDnd":false,"objectId":{"name":"objNekoPresenceDemo","path":"objects/objNekoPresenceDemo/objNekoPresenceDemo.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1568.0,"y":672.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":"none","properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"lay_buttons","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_65047533","properties":[
@@ -56,6 +57,7 @@
     {"name":"inst_4CF4F3C8","path":"rooms/rm_mainMenu/rm_mainMenu.yy",},
     {"name":"inst_4AFCA911","path":"rooms/rm_mainMenu/rm_mainMenu.yy",},
     {"name":"inst_1A3D6F44","path":"rooms/rm_mainMenu/rm_mainMenu.yy",},
+    {"name":"inst_4F5579DC","path":"rooms/rm_mainMenu/rm_mainMenu.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

@@ -45,24 +45,29 @@ if global.money >= father.price{
 			
 			case "crochetGlooves":
 			instance_create_depth(obj_player.x,obj_player.y,depth,obj_orbitalGloove)
+			var _itemSprite = spr_invisibleSprite
 			break;
 			
 			case "skate":
 			obj_player.hspd += obj_player.hspd * 0.05
 			obj_player.vspd += obj_player.vspd * 0.05
 			global.bulletSpray += 3
+			var _itemSprite = spr_obtSkate
 			break;
 			
 			case "monocle":
 			global.statDamage -= global.statDamage * 0.35
 			global.shotRateBonus -= 0.10
 			global.bulletSpray = -9999999
+			var _itemSprite = spr_obtMonocle
 			break;
 			
 			case "pillow":
+			var _itemSprite = spr_invisibleSprite
 			instance_create_depth(obj_player.x,obj_player.y,-999,obj_orbitalPillow)
 			
 			case "dmgUp":
+			var _itemSprite = spr_invisibleSprite
 			global.statDamage += 1.5
 			break;
 		}

@@ -12,4 +12,4 @@ y += _moveY
 
 image_xscale = obj_player.image_xscale
 image_yscale = obj_player.image_yscale
-depth = obj_player.depth - 99
+depth = obj_player.depth - 10
