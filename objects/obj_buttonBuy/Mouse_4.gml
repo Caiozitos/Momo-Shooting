@@ -65,6 +65,12 @@ if global.money >= father.price{
 			case "pillow":
 			var _itemSprite = spr_invisibleSprite
 			instance_create_depth(obj_player.x,obj_player.y,-999,obj_orbitalPillow)
+			break;
+			
+			case "sophiesHat":
+			var _itemSprite = spr_obtWindHat
+			instance_create_depth(obj_player.x,obj_player.y,-999,obj_tornado)
+			break;
 			
 			case "dmgUp":
 			var _itemSprite = spr_invisibleSprite

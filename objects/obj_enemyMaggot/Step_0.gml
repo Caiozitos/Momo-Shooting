@@ -34,9 +34,11 @@ if i > 255{
 image_blend = make_color_rgb(255,i,i)
 
 //Recuperando-se do freeze
+if hspd > 0{
 hspd += 2
 if hspd > recoverSpd{
 	hspd = recoverSpd
+}
 }
 
 move_towards_point(obj_player.x,obj_player.y,hspd)
