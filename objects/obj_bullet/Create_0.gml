@@ -1,4 +1,5 @@
 speed = 0
+global.bulletsCreated += 1
 direction += random_range(-global.bulletSpray,global.bulletSpray)
 if global.bulletSpray < -999999{
 	direction = point_direction(x,y,mouse_x,mouse_y)

@@ -172,10 +172,34 @@ switch (item){
 	name = "Damage Up"
 	break;
 	
+	case "glitch":
+	sprite_index = spr_shopItems
+	image_index = 5
+	type = "powerup"
+	price = 40
+	name = "Gl!tcH_"
+	break;
+	
+	case "cooperCoin":
+	sprite_index = spr_shopItems
+	image_index = 6
+	type = "powerup"
+	price = 60
+	name = "Copper Coins"
+	break;
+	
+	case "djDisk":
+	sprite_index = spr_shopItems
+	image_index = 7
+	type = "powerup"
+	price = 55
+	name = "DJ's Disk"
+	break;
+	
 	default:
 	sprite_index = spr_invisibleSprite
 	type = "gun"
-	price = 999
+	price = 9999
 	name = "???"
 	break;
 }

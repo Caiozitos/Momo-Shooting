@@ -1,6 +1,5 @@
 hspd = 0
 hittenExplosion = false
-son = instance_create_depth(x,y,depth + 1,obj_enemyColisor,{father:id})
 
 //Definindo se a larva vai ser uma larva cavaleiro (10% de chance)
 if global.wave >= 3 and global.wave <= 6{
@@ -57,3 +56,5 @@ recoverSpd = hspd
 poisonDmg = 0
 randomize()
 image_index = irandom_range(0,5)
+
+son = instance_create_depth(x,y,depth + 1,obj_enemyColisor,{father:id})

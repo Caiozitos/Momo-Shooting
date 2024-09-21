@@ -32,13 +32,11 @@ if global.money >= father.price{
 			case "burger":
 			obj_player.hpMax += 6
 			obj_player.hspd -= obj_player.hspd * 0.10
-			obj_player.vspd -= obj_player.vspd * 0.10
 			var _itemSprite = spr_obtBurger
 			break
 			
 			case "coffe":
 			obj_player.hspd += obj_player.hspd * 0.10
-			obj_player.vspd += obj_player.vspd * 0.10
 			global.shotRateBonus += 0.15
 			var _itemSprite = spr_obtCoffee
 			break
@@ -50,7 +48,6 @@ if global.money >= father.price{
 			
 			case "skate":
 			obj_player.hspd += obj_player.hspd * 0.05
-			obj_player.vspd += obj_player.vspd * 0.05
 			global.bulletSpray += 3
 			var _itemSprite = spr_obtSkate
 			break;
@@ -72,9 +69,37 @@ if global.money >= father.price{
 			instance_create_depth(obj_player.x,obj_player.y,-999,obj_tornado)
 			break;
 			
+			case "cooperCoin":
+			var _itemSprite = spr_obtCopperCoins
+			break;
+
 			case "dmgUp":
 			var _itemSprite = spr_invisibleSprite
 			global.statDamage += 1.5
+			break;
+			
+			case "glitch":
+		    var _itemSprite = spr_obtGlitch;
+		    randomize()
+		    switch(choose(0, 1, 2, 3, 4)) {
+		        case 0: global.statDamage += global.statDamage * 0.25; break;
+		        case 1: global.shotRateBonus += global.shotRateBonus * 0.25; break;
+		        case 2: global.bulletSpray += global.bulletSpray * 0.25; break;
+		        case 3: obj_player.hspd += obj_player.hspd * 0.25; break;
+				case 4: obj_player.hpMax += obj_player.hpMax * 0.25; break;
+		    }
+			randomize()
+		    switch(choose(0, 1, 2, 3, 4)) {
+		        case 0: global.statDamage -= global.statDamage * 0.10; break;
+		        case 1: global.shotRateBonus -= global.shotRateBonus * 0.10; break;
+		        case 2: global.bulletSpray -= global.bulletSpray * 0.10; break;
+		        case 3: obj_player.hspd -= obj_player.hspd * 0.10; break;
+				case 4: obj_player.hpMax -= obj_player.hpMax * 0.10; break;
+			}
+		    break;
+			
+			case "djDisk":
+			var _itemSprite = spr_obtDJDisk
 			break;
 		}
 		ds_list_add(global.cosmetics,_itemSprite)

@@ -1,0 +1,1 @@
+global.musicVolume = audio_sound_get_gain(global.soundtrack)

@@ -7,7 +7,7 @@ inputY = keyboard_check(ord("S")) - keyboard_check(ord("W"))
 
 //Movendo o boneco
 var _moveX = inputX * hspd
-var _moveY = inputY * vspd
+var _moveY = inputY * hspd
 x += _moveX
 y += _moveY
 }

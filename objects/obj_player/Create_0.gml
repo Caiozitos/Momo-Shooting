@@ -8,17 +8,17 @@ global.showStats = false //Se está mostrando os status
 hpMax = 15 //Vida máxima
 hp = 15 //Vida
 global.bulletSpray = 0 //Bonus de desvio das balas
+global.bulletsCreated = 0
 global.statDamage = 5//Dano
 global.pierceFactor = 0.25 //Debuff do piercing
 global.shotRateBonus = 1 //Bonus de veloc. de tiro
 global.inventory = ds_list_create() //Items possuídos
 global.inventoryIcons = ds_list_create() //Items possuídos (image_index)
-hspd = 7 //Velocidade horizontal
-vspd = 7 //Velocidade vertical
+hspd = 7 //I dont care
 
 isInvencible = false //Invencibilidade
 
-global.money = 0 //Dinheiro
+global.money = 15 //Dinheiro
 global.score = 0
 global.playtime = current_hour * 60 + current_minute
 
@@ -26,6 +26,7 @@ alarm[0] = 1 //Iniciando as pegadas
 alarm[4] = 3 //Iniciando a smoke
 
 global.cosmetics = ds_list_create()
+ds_list_add(global.cosmetics,spr_obtDJDisk)
 global.shopItems = ds_list_create()
 ds_list_add(global.shopItems,
 "pistol",
@@ -44,7 +45,10 @@ ds_list_add(global.shopItems,
 "skate",
 "monocle",
 "sophiesHat",
-"pillow"
+"pillow",
+"glitch",
+"djDisk",
+"cooperCoin"
 )
 
 global.poisonShot = false
