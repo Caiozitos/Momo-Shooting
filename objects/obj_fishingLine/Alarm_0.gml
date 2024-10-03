@@ -1,0 +1,1 @@
+growingSpeed = -0.3

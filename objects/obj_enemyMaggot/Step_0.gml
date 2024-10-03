@@ -33,15 +33,10 @@ if i > 255{
 }
 image_blend = make_color_rgb(255,i,i)
 
-//Recuperando-se do freeze
-if hspd > 0{
-hspd += 2
-if hspd > recoverSpd{
-	hspd = recoverSpd
-}
-}
 
+if son.state != "blind"{
 move_towards_point(obj_player.x,obj_player.y,hspd)
+}
 if place_meeting(x + hspd + 2, y, obj_enemyColisor) {
     var _enemyInst = instance_place(x + hspd + 2, y, obj_enemyColisor);
     if _enemyInst != son.id {

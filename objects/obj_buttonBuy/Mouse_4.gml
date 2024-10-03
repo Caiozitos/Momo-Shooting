@@ -101,6 +101,38 @@ if global.money >= father.price{
 			case "djDisk":
 			var _itemSprite = spr_obtDJDisk
 			break;
+			
+			case "bulb":
+			var _itemSprite = spr_obtLightBulb
+			instance_create_depth(irandom_range(128,1380),irandom_range(100,810),depth,obj_trapBulb)
+			break;
+			
+			case "mold":
+			var _itemSprite = spr_obtMold
+			break;
+			
+			case "grenade":
+			var _itemSprite = spr_obtGrenade
+			break;
+			
+			case "landMines":
+			var _itemSprite = spr_invisibleSprite
+			instance_create_depth(x,y,depth,obj_landMine)
+			break;
+			
+			case "boots":
+			var _itemSprite = spr_invisibleSprite
+			obj_timedItems.kickOn = true
+			break;
+			
+			case "molotov":
+			var _itemSprite = spr_obtMolotov
+			break;
+			
+			case "fishingRod":
+			var _itemSprite = spr_obtFishingRod
+			global.fishingRods += 1
+			break;
 		}
 		ds_list_add(global.cosmetics,_itemSprite)
 		ds_list_add(global.inventory,father.sprite_index)

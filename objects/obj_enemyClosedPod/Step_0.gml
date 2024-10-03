@@ -18,9 +18,9 @@ else{
 #endregion
 
 #region Comportamento
-
 //Caindo do céu
 if sprite_index = spr_enemyClosedPodFall{
+	y += fallSpeed
 	if alarm[2] >= 0{
 		image_index = 0
 	}
@@ -43,8 +43,9 @@ if sprite_index = spr_enemyPodWalker or sprite_index = spr_enemyPodWalkerShot{
 	else{
 		sprite_index = spr_enemyPodWalker
 		hspd = 3
+		}
 	}
-	}
+	move_towards_point(obj_player.x,obj_player.y,hspd)
 
 //Mantendo a depth
 depth = -y
@@ -63,11 +64,6 @@ if i > 255{
 }
 image_blend = make_color_rgb(255,i,i)
 
-//Recuperando-se do freeze
-hspd += 1.5
-if hspd > recoverSpd{
-	hspd = recoverSpd
-}
 
 //
 #endregion
@@ -75,7 +71,9 @@ if hspd > recoverSpd{
 #region Colisão
 
 if sprite_index = spr_enemyPodWalker or sprite_index = spr_enemyPodWalkerShot{
+if son.state != "blind" and sprite_index != spr_enemyClosedPod{
 move_towards_point(obj_player.x,obj_player.y,hspd)
+}
 }
 
 

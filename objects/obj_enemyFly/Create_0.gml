@@ -3,7 +3,6 @@ hspd = 0
 image_xscale = 0.8
 image_yscale = 0.8
 hittenExplosion = false
-son = instance_create_depth(x,y,depth + 1,obj_enemyColisor,{father:id})
 
 //Definindo se o casulo vai ser fechado ou caminhante
 randomize()
@@ -33,3 +32,5 @@ recoverSpd = hspd
 poisonDmg = 0
 randomize()
 image_index = irandom_range(0,5)
+
+son = instance_create_depth(x,y,depth + 1,obj_enemyColisor,{father:id})

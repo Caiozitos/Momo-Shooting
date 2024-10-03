@@ -21,7 +21,14 @@ if global.wave <= 5{ds_list_add(global.shopItems,
 "pillow",
 "glitch",
 "djDisk",
-"cooperCoin"
+"cooperCoin",
+"mold",
+"bulb",
+"grenade",
+"landMines",
+"boots",
+"molotov",
+"fishingRod"
 )}
 else if global.wave > 5 && global.wave <= 10{ds_list_add(global.shopItems,
 "pistol",
@@ -44,7 +51,14 @@ else if global.wave > 5 && global.wave <= 10{ds_list_add(global.shopItems,
 "pillow",
 "glitch",
 "djDisk",
-"cooperCoin"
+"cooperCoin",
+"mold",
+"bulb",
+"grenade",
+"landMines",
+"boots",
+"molotov",
+"fishingRod"
 )}
 else if global.wave > 10 && global.wave <= 15{ds_list_add(global.shopItems,
 "ak47",
@@ -66,7 +80,14 @@ else if global.wave > 10 && global.wave <= 15{ds_list_add(global.shopItems,
 "pillow",
 "glitch",
 "djDisk",
-"cooperCoin"
+"cooperCoin",
+"mold",
+"bulb",
+"grenade",
+"landMines",
+"boots",
+"molotov",
+"fishingRod"
 )}
 else if global.wave > 15{ds_list_add(global.shopItems,
 "ak47",
@@ -88,7 +109,14 @@ else if global.wave > 15{ds_list_add(global.shopItems,
 "pillow",
 "glitch",
 "djDisk",
-"cooperCoin"
+"cooperCoin",
+"mold",
+"bulb",
+"grenade",
+"landMines",
+"boots",
+"molotov",
+"fishingRod"
 )}
 
 instance_destroy(obj_buttonBuy)

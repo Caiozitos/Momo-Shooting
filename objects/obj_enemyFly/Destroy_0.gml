@@ -12,7 +12,7 @@ image_blend: c_red
 })
 	
 
-var _moneyDrop = irandom_range(0,5)
+var _moneyDrop = irandom_range(1,4)
 repeat(_moneyDrop){
 	instance_create_depth(x,y,depth,obj_coin)
 }

@@ -2,8 +2,13 @@ if not instance_exists(obj_shopWindow){
 #region Movimento
 if obj_playerGun.sprite_index != spr_minigunFiring{
 //Recebendo o input
-inputX = keyboard_check(ord("D")) - keyboard_check(ord("A"))
-inputY = keyboard_check(ord("S")) - keyboard_check(ord("W"))
+var _right = keyboard_check(ord("D"))
+var _left = keyboard_check(ord("A"))
+var _down = keyboard_check(ord("S"))
+var _up = keyboard_check(ord("W")) 
+
+inputX = _right - _left
+inputY = _down - _up
 
 //Movendo o boneco
 var _moveX = inputX * hspd

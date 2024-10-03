@@ -18,6 +18,7 @@ hspd = 7 //I dont care
 
 isInvencible = false //Invencibilidade
 
+global.fishingRods = 0
 global.money = 15 //Dinheiro
 global.score = 0
 global.playtime = current_hour * 60 + current_minute
@@ -26,7 +27,6 @@ alarm[0] = 1 //Iniciando as pegadas
 alarm[4] = 3 //Iniciando a smoke
 
 global.cosmetics = ds_list_create()
-ds_list_add(global.cosmetics,spr_obtDJDisk)
 global.shopItems = ds_list_create()
 ds_list_add(global.shopItems,
 "pistol",
@@ -48,7 +48,14 @@ ds_list_add(global.shopItems,
 "pillow",
 "glitch",
 "djDisk",
-"cooperCoin"
+"cooperCoin",
+"mold",
+"bulb",
+"grenade",
+"landMines",
+"boots",
+"molotov",
+"fishingRod"
 )
 
 global.poisonShot = false

@@ -91,11 +91,11 @@ var _choose = choose(1,2,3)
 var _sprite = choose(spr_blood,spr_blood2,spr_blood3)
 if global.currentGun = "uzi" or global.currentGun = "ak47" or  global.currentGun = "minigun"{
 if _choose = 1{
-instance_create_depth(x,y,depth,obj_smoke,{sprite_index:_sprite,x: x+10,image_xscale: _direction,image_yscale:2})
+instance_create_depth(x,y,depth,obj_smoke,{sprite_index:_sprite,x: x+10,image_xscale: _direction,image_yscale:2, image_blend: c_red})
 }
 }
 else{
-instance_create_depth(x,y,depth,obj_smoke,{sprite_index:_sprite,x: x+10,image_xscale: _direction,image_yscale:2})
+instance_create_depth(x,y,depth,obj_smoke,{sprite_index:_sprite,x: x+10,image_xscale: _direction,image_yscale:2, image_blend: c_red})
 }
 }
 global.score += 100

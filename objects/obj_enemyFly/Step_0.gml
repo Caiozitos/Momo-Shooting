@@ -38,15 +38,12 @@ if i > 255{
 }
 image_blend = make_color_rgb(255,i,i)
 
-//Recuperando-se do freeze
-hspd += 1.5
-if hspd > recoverSpd{
-	hspd = recoverSpd
-}
 
 //
 #endregion
+if son.state != "blind"{
 move_towards_point(obj_player.x,obj_player.y,hspd)
+}
 #region Colisão
 if place_meeting(x + hspd + 2, y, obj_enemyColisor) {
     var _enemyInst = instance_place(x + hspd + 2, y, obj_enemyColisor);

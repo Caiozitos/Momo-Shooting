@@ -1,0 +1,2 @@
+instance_destroy(obj_itemDisplay)
+instance_destroy()

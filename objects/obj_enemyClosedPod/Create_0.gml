@@ -1,7 +1,6 @@
 spawnedEnemies = 0
 hspd = 0
 hittenExplosion = false
-son = instance_create_depth(x,y,depth + 1,obj_enemyColisor,{father:id})
 
 //Definindo se o casulo vai ser fechado ou caminhante
 randomize()
@@ -14,13 +13,12 @@ hp = 9 //Vida
 damage = 0 //Dano
 i = 255
 sprite_index = spr_enemyClosedPodFall
-
 y = 0
 randomize()
 x = random_range(140,1300)
-vspeed = 40
+fallSpeed = 35
 image_index = 0
- alarm[2] = irandom_range(5,15)
+alarm[2] = irandom_range(5,10)
 alarm[3] = 120
 }
 
@@ -39,3 +37,5 @@ recoverSpd = hspd
 poisonDmg = 0
 randomize()
 image_index = irandom_range(0,5)
+
+son = instance_create_depth(x,y,depth + 1,obj_enemyColisor,{father:id})

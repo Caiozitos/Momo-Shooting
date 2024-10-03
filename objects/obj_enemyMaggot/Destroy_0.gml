@@ -27,9 +27,7 @@ else{
 }
 
 if image_xscale = 0.5 or image_xscale = -0.5{var _moneyDrop = irandom_range(0,1)}
-else if sprite_index = spr_enemyMaggot{var _moneyDrop = irandom_range(1,3)}
-else if sprite_index = spr_enemyMaggotKnight{var _moneyDrop = irandom_range(1,5)}
-else if sprite_index = spr_enemyPod{var _moneyDrop = 0}
+var _moneyDrop = irandom_range(1,4)
 repeat(_moneyDrop){
 	instance_create_depth(x,y,depth,obj_coin)
 }

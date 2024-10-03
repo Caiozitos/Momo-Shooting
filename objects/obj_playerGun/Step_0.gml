@@ -73,7 +73,7 @@ switch (global.currentGun) {
         var _deadzone = 60;
         var _bulletDamage = global.statDamage * 1;
         var _gunSprite = spr_revolver;
-        var _rechargeTime = 13;
+        var _rechargeTime = 10;
         var _distancePlayer = 40;
         var _shakeX = irandom_range(103, 108);
         var _shakeY = irandom_range(97, 103);
@@ -88,7 +88,7 @@ switch (global.currentGun) {
 
     case "dart":
         var _deadzone = 60;
-        var _bulletDamage = global.statDamage * 0.80;
+        var _bulletDamage = global.statDamage * 0.40;
         var _gunSprite = spr_dartGun;
         var _rechargeTime = 8;
         var _distancePlayer = 30;
@@ -236,6 +236,16 @@ if (_condition) {
     if (special != undefined) {
         special();
     }
+	
+	
+	
+	if global.fishingRods > 0{
+	instance_create_depth(x,y,depth,obj_fishingLine,{
+	image_angle: irandom_range(0,360),
+	direction: image_angle
+	}
+)
+	}
 } else {
     
     if (global.currentGun == "minigun") {

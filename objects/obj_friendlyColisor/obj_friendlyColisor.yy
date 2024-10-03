@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_friendlyColisor",
   "spriteId": {
-    "name": "spr_collisor",
-    "path": "sprites/spr_collisor/spr_collisor.yy",
+    "name": "spr_invisibleSprite",
+    "path": "sprites/spr_invisibleSprite/spr_invisibleSprite.yy",
   },
   "solid": false,
   "visible": true,

@@ -73,11 +73,6 @@ else if other.poison = "normal"{
 	}
 }
 
-if poisonDmg != 0{
-	hspd = hspd * 0.5
-	image_blend = c_lime
-}
-
 //Criando particula de tiro
 if other.sprite_index != spr_flame{
 if other.x > x{

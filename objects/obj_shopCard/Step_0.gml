@@ -34,6 +34,7 @@ switch (item){
 	name = "UZI"
 	break;
 	
+	
 	case "revolver":
 	sprite_index = spr_revolver
 	type = "gun"
@@ -73,7 +74,7 @@ switch (item){
 	sprite_index = spr_rocket
 	type = "gun"
 	price = 260
-	name = "Bazooka"
+	name = "RocketLauncher"
 	break;
 	
 	case "banana":
@@ -104,7 +105,7 @@ switch (item){
 	sprite_index = spr_fruitIcons
 	image_index = 3
 	type = "powerup"
-	price = 45
+	price = 35
 	name = "CompleteMeal"
 	break;
 	
@@ -112,7 +113,7 @@ switch (item){
 	sprite_index = spr_fruitIcons
 	image_index = 4
 	type = "powerup"
-	price = 30
+	price = 25
 	name = "Burger"
 	break;
 	
@@ -120,7 +121,7 @@ switch (item){
 	sprite_index = spr_fruitIcons
 	image_index = 5
 	type = "powerup"
-	price = 40
+	price = 30
 	name = "Coffee"
 	break;
 	
@@ -152,7 +153,7 @@ switch (item){
 	sprite_index = spr_shopItems
 	image_index = 3
 	type = "powerup"
-	price = 60
+	price = 50
 	name = "Wind Hat"
 	break;
 	
@@ -168,7 +169,7 @@ switch (item){
 	sprite_index = spr_shopIcon
 	image_index = 2
 	type = "powerup"
-	price = 20
+	price = 25
 	name = "Damage Up"
 	break;
 	
@@ -176,7 +177,7 @@ switch (item){
 	sprite_index = spr_shopItems
 	image_index = 5
 	type = "powerup"
-	price = 40
+	price = 35
 	name = "Gl!tcH_"
 	break;
 	
@@ -192,8 +193,64 @@ switch (item){
 	sprite_index = spr_shopItems
 	image_index = 7
 	type = "powerup"
-	price = 55
+	price = 40
 	name = "DJ's Disk"
+	break;
+	
+	case "bulb":
+	sprite_index = spr_shopItems
+	image_index = 8
+	type = "powerup"
+	price = 35
+	name = "Light Bulb"
+	break;
+	
+	case "mold":
+	sprite_index = spr_shopItems
+	image_index = 9
+	type = "powerup"
+	price = 35
+	name = "Mold"
+	break;
+	
+	case "grenade":
+	sprite_index = spr_shopItems
+	image_index = 10
+	type = "powerup"
+	price = 50
+	name = "Grenades"
+	break;
+	
+	case "landMines":
+	sprite_index = spr_shopItems
+	image_index = 11
+	type = "powerup"
+	price = 50
+	name = "Land Mines"
+	break;
+	
+	case "boots":
+	sprite_index = spr_shopItems
+	image_index = 12
+	type = "powerup"
+	price = 40
+	name = "Boots"
+	break;
+	
+	case "molotov":
+	sprite_index = spr_shopItems
+	image_index = 13
+	type = "powerup"
+	price = 50
+	name = "Molotov"
+	break;
+	
+	case "fishingRod":
+	sprite_index = spr_shopItems
+	image_index = 14
+	type = "powerup"
+	price = 25
+	name = "Fishing Rod"
 	break;
 	
 	default:
@@ -204,6 +261,7 @@ switch (item){
 	break;
 }
 }
+
 if type = "gun" and ds_list_find_index(obj_playerGun.gunList,item) != -1 or name = "???"{
 	ds_list_add(global.shopItems,item)
 	ds_list_shuffle(global.shopItems)

@@ -15,6 +15,13 @@ if state = "slow"{
 	stateFrame = 1
 }
 
+if state = "blind"{
+	stateFrame = 3
+	if alarm[1] = 0 or alarm[1] = -1{
+	alarm[1] = 5
+	}
+}
+
 }
 else{
 	instance_destroy()

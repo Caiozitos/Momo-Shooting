@@ -1,19 +1,28 @@
+randomize()
 if other.pierce = true{
 if ds_list_find_index(other.hitEnemies,id) = -1{
-scr_damageFeedback(other.damage)
+scr_damageFeedback(other.damage,c_red)
 hp -= other.damage
 i = 0
+	if sprite_index != spr_enemyMaggotKnight{
 	audio_stop_sound(snd_bulletHit)
 	audio_stop_sound(snd_alienHit)
 	audio_play_sound(snd_bulletHit,0,0,,,random_range(0.9,1.2))
 	audio_play_sound(snd_alienHit,0,0,,,random_range(0.9,1.2))
 }
+else{
+	audio_stop_sound(snd_bulletHit)
+	audio_stop_sound(snd_metalHurt)
+	audio_play_sound(snd_bulletHit,0,0,,,random_range(0.9,1.2))
+	audio_play_sound(snd_metalHurt,0,0,,,random_range(0.9,1.2))
+}
+}
 }
 	
 //Tomando dano (sempierce)
 else{
-scr_damageFeedback(other.damage)
 hp -= other.damage
+scr_damageFeedback(other.damage,c_red)
 i = 0
 	if global.currentGun != spr_flamethrower{
 	if global.currentGun = "ak47" or global.currentGun ="uzi" or global.currentGun ="minigun"{
@@ -23,10 +32,18 @@ i = 0
 		var _choose = 1
 	}
 	if _choose = 1{
+	if sprite_index != spr_enemyMaggotKnight{
 	audio_stop_sound(snd_bulletHit)
 	audio_stop_sound(snd_alienHit)
 	audio_play_sound(snd_bulletHit,0,0,,,random_range(0.9,1.2))
 	audio_play_sound(snd_alienHit,0,0,,,random_range(0.9,1.2))
+}
+else{
+	audio_stop_sound(snd_bulletHit)
+	audio_stop_sound(snd_metalHurt)
+	audio_play_sound(snd_bulletHit,0,0,,,random_range(0.9,1.2))
+	audio_play_sound(snd_metalHurt,0,0,,,random_range(0.9,1.2))
+}
 	}
 	}
 }
@@ -54,11 +71,6 @@ else if other.poison = "normal"{
 	if alarm[0] = -1{
 	alarm[0] = 30
 	}
-}
-
-if poisonDmg != 0{
-	hspd = hspd * 0.5
-	image_blend = c_lime
 }
 
 //Criando particula de tiro
