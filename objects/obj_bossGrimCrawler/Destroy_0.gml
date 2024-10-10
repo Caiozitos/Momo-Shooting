@@ -28,3 +28,4 @@ if image_xscale > 0.5{
 	}
 }
 obj_gameController.alarm[1] = 1
+obj_game.alarm[0] = 120
