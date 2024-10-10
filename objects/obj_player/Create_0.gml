@@ -3,13 +3,12 @@ audio_group_load(audiogroup_priority)
 escCloseGame = 0 //Timer de fechar o jogo
 inputX = 0 //Se A ou D está sendo pressionado
 inputY = 0 //Se W ou S está sendo pressionado
-global.showStats = false //Se está mostrando os status
 
 hpMax = 15 //Vida máxima
 hp = 15 //Vida
 global.bulletSpray = 0 //Bonus de desvio das balas
 global.bulletsCreated = 0
-global.statDamage = 5//Dano
+global.statDamage = 100 //Dano
 global.pierceFactor = 0.25 //Debuff do piercing
 global.shotRateBonus = 1 //Bonus de veloc. de tiro
 global.inventory = ds_list_create() //Items possuídos

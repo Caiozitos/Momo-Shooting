@@ -28,3 +28,6 @@ ds_list_add(global.shopItems,
     "molotov",
     "fishingRod"
 );
+
+global.showStats = false
+global.autoshotConfig = false

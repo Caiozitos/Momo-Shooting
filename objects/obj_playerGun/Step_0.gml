@@ -188,7 +188,7 @@ sprite_index = _gunSprite;
 
 #region Screenshake
 if (cameraShake == true) {
-    camera_set_view_pos(view_camera[0], _shakeX + addShake, _shakeY + addShake);
+    camera_set_view_pos(view_camera[0], _shakeX + irandom_range(-addShake, +addShake), _shakeY + irandom_range(-addShake, +addShake));
 }
 #endregion
 
@@ -196,8 +196,12 @@ if not instance_exists(obj_shopWindow) {
 #region Atirando
 cursor_sprite = spr_crosshair;
 
-var _condition = _autoshot ? mouse_check_button(mb_left) and gunReady : mouse_check_button_pressed(mb_left) and gunReady;
-
+if _autoshot = true or global.autoshotConfig = true{
+	var _condition = mouse_check_button(mb_left) and gunReady
+}
+else{
+	var _condition = mouse_check_button_pressed(mb_left) and gunReady
+}
 if (_condition) {
 	if global.currentGun = "rocket"{
 		image_blend = c_red

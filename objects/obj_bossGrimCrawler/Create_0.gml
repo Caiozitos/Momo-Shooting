@@ -11,5 +11,10 @@ randomize()
 image_index = irandom_range(0,5)
 image_xscale = 1.2
 state = "follow"
+alarm[0] = 30
 alarm[2] = 60
 alarm[3] = 180
+alarm[5] = 20
+audio_stop_all()
+global.soundtrack = ost_demonsvoice
+a = 0

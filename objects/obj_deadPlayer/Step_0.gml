@@ -1,3 +1,3 @@
-if drawTrigger = true and i < 1{
-	i += 0.05
+if drawTrigger = true and p < 1{
+	p += 0.05
 }

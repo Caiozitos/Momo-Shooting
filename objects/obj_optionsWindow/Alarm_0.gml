@@ -1,0 +1,1 @@
+stopAnim = true

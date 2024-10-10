@@ -1,5 +1,6 @@
 ds_list_destroy(global.shopItems)
 global.shopItems = ds_list_create()
+audio_sound_gain(global.soundtrack,volume,1000)
 
 if global.wave <= 5{ds_list_add(global.shopItems,
 "pistol",
