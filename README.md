@@ -1,3 +1,8 @@
+# MOVED
+This game got moved to Itch.io and this repository is for personal use/sharing only.
+https://caiozitos.itch.io/momo-shooting
+
+
 # Momo Shooting
 ![imagem_2024-07-11_143146817](https://github.com/Caiozitos/Momo-Shooting/assets/174830907/924498fc-fc65-486b-961f-0657a8116cc7)
 
